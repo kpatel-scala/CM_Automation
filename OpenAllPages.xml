@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Open all pages test">
+
+    <test name="Open all Pages and Tabs - Media">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_ContentMedia">
+                <methods>
+                    <include name="test01_OpenImage" />
+                    <include name="test02_OpenVideo" />
+                    <include name="test03_OpenMessage" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open all Pages and Tabs - Dashboard">
+        <classes>
+             <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_DashboardLinks">
+                <methods>
+                    <include name="testLinks"/>
+                </methods>
+             </class>
+        </classes>
+    </test>
+
+    <test name="Open all Pages and Tabs - Template">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_ContentTemplate">
+                <methods>
+                    <include name="test_OpenTemplate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open all Pages and Tabs - Planning">
+        <classes>
+                <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_PlanningPlaylist">
+                    <methods>
+                        <include name="test01_OpenPlaylistTabs"/>
+                    </methods>
+                </class>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_PlanningSchedule">
+                <methods>
+                    <include name="test01_OpenScheduleTabs"/>
+                </methods>
+            </class>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_PlanningChannels">
+                <methods>
+                    <include name="test_OpenChannelsTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open all Pages and Tabs - Network">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_Network">
+                <methods>
+                    <include name="test01_OpenPlayersTabs"/>
+                    <include name="test02_OpenPlayerHealthTabs"/>
+                    <include name="test03_OpenMaintJobTabs"/>
+                    <include name="test04_OpenDistributionTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open all Pages and Tabs - PersonalSettings">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_PersonalSettings">
+                <methods>
+                    <include name="test01_OpenPersonalSettingsTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Open all Pages and Tabs - System Menu">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_SystemMenu">
+                <methods>
+                    <include name="test01_OpenSystemsTabs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

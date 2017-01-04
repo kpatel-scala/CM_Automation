@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Media Test">
+
+    <test name="Template Open">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_ContentTemplate">
+                <methods>
+                    <include name="test_OpenTemplate" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Media Image Open">
+        <classes>
+            <class name="com.scala.qa.contentmanager.Tests.SmokeTestSuite.test_ContentMedia">
+                <methods>
+                    <include name="test01_OpenImage" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
